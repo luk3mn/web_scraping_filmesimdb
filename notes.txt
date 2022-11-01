@@ -1,0 +1,23 @@
+PARA CRIAR O PROJETO
+> scrapy genspider “nome” “site”
+
+PARA ENTRAR NO SHELL (AMBIENTE DE TESTES)
+> scrapy.exe shell
+> response.css('.secondaryInfo::text').getall()
+> anos = response.css('.secondaryInfo::text') 
+
+EXECUTA O CÓDIGO
+> scrapy crawl imdb
+> scrapy crawl imdb -O imdb.json
+> scrapy crawl imdb -O imdb.csv
+
+-o (não sobescreve)
+-O (começa do zero)
+
+===============================
+
+.titleColumn - Pega a caixa com nome e ano do filme
+.titleColumn a - Nome do filme
+.secondaryInfo - Anos 
+strong - Avaliação
+
